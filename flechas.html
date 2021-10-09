@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujando</title>
+</head>
+<body>
+    <h2>Realiza un dibujo!!</h2>
+    <a href="index.html">Inicio</a><br>
+    <select name="modo_dibujo" id="modo_dibujo">
+        <option value="0">Seleccione el modo de Dibujo</option>
+        <option value="1">Flechas del Teclado</option>
+        <option value="2">Mouse</option>
+    </select>
+    <input type="color" name="color_dibujo" id="color_dibujo">
+    <input type="button" value="Borrar" id="btn_borrar"> <br><br>
+    <canvas height="500" width="500" id="area_dibujo"></canvas>    
+
+    <script src="js/eventos.js"></script>
+</body>
+</html>
