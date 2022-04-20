@@ -1,32 +1,84 @@
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Cajero Automático</title>
-  </head>
-  <body>
-    <a href="index.html">Inicio</a>  
-    <p>
-      <img src="img/cajero.gif" usemap="#workmap" />
-      <map name="workmap">
-        <area shape="rect" coords="60,178,77,189" id="Uno">
-        <area shape="rect" coords="82,178,97,189" id="Dos">
-        <area shape="rect" coords="102,178,120,189" id="Tres">
-        <area shape="rect" coords="58,192,75,204" id="Cuatro">
-        <area shape="rect" coords="80,192,98,204" id="Cinco">
-        <area shape="rect" coords="102,192,121,204" id="Seis">
-        <area shape="rect" coords="55,208,73,222" id="Siete">
-        <area shape="rect" coords="79,208,99,222" id="Ocho">
-        <area shape="rect" coords="102,208,122,222" id="Nueve">
-        <area shape="rect" coords="77,226,98,241" id="Cero">
-        <area shape="rect" coords="127,178,146,189" id="Borrar">
-        <area shape="rect" coords="128,192,149,204" id="Cancelar">
-        <area shape="rect" coords="130,208,151,222" id="Enter">
-      </map>
-    </p>
-    <p id="saldo"></p>
-    <p id="cantidad">"Cuando dinero desea retirar"</p>
-    <p id="resultado"></p>
-    <p id="fotos"></p>
-    <script type="text/javascript" src="js/cajero.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Cajero Automatico</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+            <img src="/img/javascript.png" alt="nav_logo" width="30" height="30" class="d-inline-block align-text-bottom">
+            JavaScript
+            </a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-1">
+                <li class="nav-item">
+                <a class="nav-link" href="dibujo.html"><i class="fa-solid fa-palette"></i> &nbsp;Dibujando en Canvas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="flechas.html"><i class="fa-solid fa-lines-leaning"></i> &nbsp;Dibujando Lineas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="juego.html"><i class="fa-solid fa-gamepad"></i> &nbsp;Juego</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="clase.html"><i class="fa-solid fa-book"></i> &nbsp;Ejemplo de Clases</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="atm.html"><i class="fa-solid fa-credit-card"></i> &nbsp;Cajero Automatico</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>    
+    <main class="container mt-2 mb-2">
+        <div class="bg-light p-5 rounded">
+          <h3>Cajero Automatico</h3>
+          <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
+          
+          <img src="img/cajero.gif" usemap="#workmap" />
+          <map name="workmap">
+            <area shape="rect" coords="60,178,77,189" id="Uno">
+            <area shape="rect" coords="82,178,97,189" id="Dos">
+            <area shape="rect" coords="102,178,120,189" id="Tres">
+            <area shape="rect" coords="58,192,75,204" id="Cuatro">
+            <area shape="rect" coords="80,192,98,204" id="Cinco">
+            <area shape="rect" coords="102,192,121,204" id="Seis">
+            <area shape="rect" coords="55,208,73,222" id="Siete">
+            <area shape="rect" coords="79,208,99,222" id="Ocho">
+            <area shape="rect" coords="102,208,122,222" id="Nueve">
+            <area shape="rect" coords="77,226,98,241" id="Cero">
+            <area shape="rect" coords="127,178,146,189" id="Borrar">
+            <area shape="rect" coords="128,192,149,204" id="Cancelar">
+            <area shape="rect" coords="130,208,151,222" id="Enter">
+          </map>
+        </p>
+        <p id="saldo"></p>
+        <p id="cantidad">"Cuando dinero desea retirar"</p>
+        <p id="resultado"></p>
+        <p id="fotos"></p>
+        <script type="text/javascript" src="js/cajero.js"></script><br>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+      <div class="container">
+        <span class="text-black">&#9426;<a class="text-black" href="https://christopherdavideh.com/"><strong>christopherdavideh</strong></a>. All rights reserved.</span><br>
+        <span>
+          <script src="js/codigo.js"></script></span>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f80f9b14ea.js" crossorigin="anonymous"></script>
+</body>
 </html>
